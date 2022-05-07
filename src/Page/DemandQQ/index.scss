@@ -1,0 +1,63 @@
+.global-page-demand-qq{
+  &.page-container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 50px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  .user-card-inner {
+    display: inline-flex;
+  }
+
+  .user-card {
+    display: inline-flex;
+    align-items: center;
+
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    background: #f6f6f6;
+
+    min-width: 250px;
+  }
+
+  .input-qq {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 30px;
+    width: 200px;
+    margin-left: 5px;
+  }
+
+  .user-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  .user-info {
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .user-name {
+    color: #010700;
+  }
+
+  .user-qq {
+    color: #727274;
+  }
+}

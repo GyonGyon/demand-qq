@@ -1,0 +1,95 @@
+/* loading */
+
+.global-component-loading {
+  &.loading-outer {
+    position: relative;
+  }
+
+  .loading-component-container {
+    position: relative;
+    filter: blur(1px);
+  }
+
+  .loading-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    opacity: 0.2;
+    background: #fff;
+  }
+
+  .loading-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+
+  .loading-tip {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .loading-fusion-reactor {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin: 0;
+
+    transform: rotate(0);
+    animation: antRotate 1.2s infinite linear;
+    animation-name: rotate360;
+  }
+
+  .loading-fusion-reactor .loading-dot:first-child {
+    right: inherit;
+  }
+
+  .loading-fusion-reactor .loading-dot:nth-child(2) {
+    bottom: inherit;
+    opacity: 0.8;
+  }
+
+  .loading-fusion-reactor .loading-dot:nth-child(3) {
+    left: initial;
+    opacity: 0.6;
+  }
+
+  .loading-fusion-reactor .loading-dot:nth-child(4) {
+    top: initial;
+    opacity: 0.2;
+  }
+
+  .loading-fusion-reactor .loading-dot {
+    position: absolute;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #03c1fd;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  @keyframes rotate360 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
